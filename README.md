@@ -13,17 +13,15 @@ Creating a gallery is a complex task that is better broken down into smaller sub
 1 - Gallery Markup
 It makes sense to start by creating the container where we will add the gallery elements. For this, add the gallery container tag in the HTML code — an unordered list with the class gallery.
 
-html
-Копіювати код
 <ul class="gallery"></ul>
+
 2 - Image Array
 To create the gallery elements, you will need data. Add this array of objects to your JavaScript file. Each object represents one gallery item.
 
 preview — link to the small version of the image for the gallery card
 original — link to the large version of the image for the modal window
 description — textual description of the image, for the alt attribute of the small image and for the caption of the large image in the modal.
-javascript
-Копіювати код
+
 const images = [
   {
     preview: 'https://cdn.pixabay.com/photo/2019/05/14/16/43/rchids-4202820__480.jpg',
@@ -32,13 +30,13 @@ const images = [
   },
   // other image objects
 ];
+
 3 - Gallery Item Markup
 Now that you have the container where gallery elements can be added, and data to create them, it's time to fill the gallery with markup.
 
 Use the images array and the HTML template for a gallery item. Create the markup for the elements in JavaScript and then add the entire markup inside ul.gallery. Do not add any other HTML tags apart from those contained in this template.
 
-html
-Копіювати код
+
 <li class="gallery-item">
   <a class="gallery-link" href="large-image.jpg">
     <img
